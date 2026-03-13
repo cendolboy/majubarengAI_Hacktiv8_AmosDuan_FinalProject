@@ -56,17 +56,19 @@ Pastikan Anda sudah menginstal:
 
 ### 2. Clone Repositori
 ```bash
-git clone [https://github.com/USERNAME_GITHUB_ANDA/cryptoassist.git](https://github.com/USERNAME_GITHUB_ANDA/cryptoassist.git)
-cd cryptoassist
+git clone [https://github.com/USERNAME_GITHUB_ANDA/majubarengAI_Hacktiv8_AmosDuan_FinalProject.git](https://github.com/USERNAME_GITHUB_ANDA/majubarengAI_Hacktiv8_AmosDuan_FinalProject.git)
+
+cd majubarengAI_Hacktiv8_AmosDuan_FinalProject
 
 cryptoassist/
 ├── public/                 # Asset statis publik
 ├── src/
+    ├── assets/ 
 │   ├── App.jsx             # Komponen Utama React & UI Logic
 │   ├── App.css             # Custom styling (Dark mode, Crypto theme)
 │   ├── gemini.js           # Konfigurasi Google Generative AI SDK & Streaming Logic
 │   └── main.jsx            # Entry point aplikasi
-├── .env                    # Environment variables (JANGAN DI-COMMIT)
+├── .env                    # Environment variables 
 ├── .gitignore              # Daftar file yang diabaikan Git
 ├── index.html              # Template HTML utama
 ├── package.json            # Daftar dependensi dan scripts npm
