@@ -1,0 +1,252 @@
+/* =========================================
+   Global & Layout Background
+   ========================================= */
+   body {
+    background-color: #0b0e14; /* Warna dasar gelap ala crypto app */
+    color: #e2e8f0;
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  
+  .crypto-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  /* =========================================
+     Mobile Device Wrapper
+     ========================================= */
+  .mobile-wrapper {
+    width: 100%;
+    max-width: 420px; /* Ukuran standar mobile */
+    height: 90vh;
+    max-height: 850px;
+    background-color: #121822;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 0 1px #1e293b;
+    position: relative;
+  }
+  
+  /* =========================================
+     Header & Badge
+     ========================================= */
+  .crypto-header {
+    background-color: #fff;
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2a3441;
+  }
+  
+  .header-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .status-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #f39c12;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #f39c12;
+  }
+  
+  /* Pengaturan khusus agar logo tidak kebesaran */
+  .header-logo {
+    height: 50px; 
+    width: auto;
+    object-fit: contain;
+  }
+  
+  /* Modifikasi badge agar teks panjang tetap rapi */
+  .badge-net {
+    font-size: 0.65rem; 
+    background: rgba(0, 255, 170, 0.1);
+    color: #e67e22;
+    padding: 4px 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 170, 0.2);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    white-space: nowrap; /* Mencegah teks turun ke baris baru */
+    font-weight: 600;
+  }
+  
+  /* =========================================
+     Chat Window & Scrollbar
+     ========================================= */
+  .chat-window {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    scrollbar-width: thin;
+    scrollbar-color: #2a3441 transparent;
+  }
+  
+  .chat-window::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .chat-window::-webkit-scrollbar-thumb {
+    background-color: #2a3441;
+    border-radius: 10px;
+  }
+  
+  .empty-state {
+    margin: auto;
+    text-align: center;
+    color: #475569;
+    font-family: monospace;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  /* =========================================
+     Chat Bubbles
+     ========================================= */
+  .chat-wrapper {
+    display: flex;
+    width: 100%;
+  }
+  
+  .user-wrapper {
+    justify-content: flex-end;
+  }
+  
+  .bot-wrapper {
+    justify-content: flex-start;
+  }
+  
+  .chat-bubble {
+    max-width: 85%;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    word-wrap: break-word;
+  }
+  
+  /* Menghilangkan margin bawah ekstra dari elemen p bawaan Markdown */
+  .chat-bubble p:last-child {
+    margin-bottom: 0; 
+  }
+  
+  /* Gaya tabel & elemen Markdown lainnya agar rapi di dark mode */
+  .chat-bubble pre {
+    background-color: rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+  
+  .chat-bubble code {
+    font-family: monospace;
+    background-color: rgba(0,0,0,0.2);
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+  
+  .user-bubble {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: white;
+    border-radius: 18px 18px 4px 18px;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+  }
+  
+  .bot-bubble {
+    background-color: #1e293b;
+    color: #cbd5e1;
+    border-radius: 18px 18px 18px 4px;
+    border: 1px solid #334155;
+  }
+  
+  /* =========================================
+     Input Area & Buttons
+     ========================================= */
+  .crypto-input-area {
+    padding: 1rem;
+    background-color: #1a222f;
+    border-top: 1px solid #2a3441;
+  }
+  
+  .crypto-input-group {
+    background-color: #0f141d;
+    border-radius: 16px;
+    border: 1px solid #2a3441;
+    display: flex;
+    overflow: hidden;
+    padding: 4px;
+  }
+  
+  .crypto-input {
+    flex: 1;
+    background-color: transparent !important;
+    border: none !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    padding-left: 12px;
+  }
+  
+  .crypto-input::placeholder {
+    color: #475569;
+  }
+  
+  .crypto-input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .crypto-send-btn {
+    background-color: #f39c12 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 12px !important;
+    font-weight: bold;
+    font-family: monospace;
+    transition: all 0.2s;
+    padding: 0 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .crypto-send-btn:hover:not(:disabled) {
+    background-color: #00cc88 !important;
+    box-shadow: 0 0 12px rgba(0, 255, 170, 0.4);
+  }
+  
+  .crypto-send-btn:disabled {
+    background-color: #334155 !important;
+    color: #94a3b8 !important;
+    cursor: not-allowed;
+  }
+  
+  /* =========================================
+     Typing Indicator Animation
+     ========================================= */
+  .typing-indicator span {
+    animation: blink 1.4s infinite both;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1;
+    margin: 0 2px;
+  }
+  
+  .typing-indicator span:nth-child(1) { animation-delay: 0s; }
+  .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+  .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+  
+  @keyframes blink {
+    0% { opacity: 0.2; }
+    20% { opacity: 1; }
+    100% { opacity: 0.2; }
+  }
