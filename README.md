@@ -11,7 +11,7 @@
 
 ## 🎓 Tentang Proyek (Maju Bareng AI)
 
-Proyek ini dikembangkan oleh **Amos Duan** sebagai **Tugas Akhir dan Portofolio Kelulusan** dari program pelatihan **Maju Bareng AI**. 
+Proyek ini dikembangkan oleh **Amos Duan Nugroho** sebagai **Final Project dan Portofolio Akhir** dari program pelatihan **Maju Bareng AI**. 
 
 Maju Bareng AI adalah inisiatif luar biasa (bagian dari *AI Opportunity Fund: Asia Pacific*) yang dirancang untuk membekali talenta digital dengan keterampilan AI yang relevan dengan kebutuhan industri masa kini. Program ini terwujud berkat kolaborasi antara:
 * **Hacktiv8**
