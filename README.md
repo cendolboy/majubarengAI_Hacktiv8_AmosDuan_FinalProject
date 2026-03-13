@@ -3,7 +3,7 @@
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
 [![Google Gemini](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
-[![License: GPL-3](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![License: GPL-3](https://img.shields.io/badge/License-GPLv3-blue.svg?style=for-the-badge)](https://www.gnu.org/licenses/gpl-3.0)
 
 **CryptoAssist** adalah aplikasi *chatbot* berbasis kecerdasan buatan (AI) bergaya *mobile-first* yang dirancang secara khusus untuk menjadi asisten ahli di bidang Web3, Blockchain, Trading, dan Cryptocurrency. Aplikasi ini memanfaatkan model bahasa mutakhir **Google Gemini 2.0 Flash** dengan antarmuka bertema *dark mode* dan *neon glow* khas industri kripto.
 
