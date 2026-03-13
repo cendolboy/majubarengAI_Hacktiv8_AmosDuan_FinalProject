@@ -7,6 +7,7 @@
 
 **CryptoAssist** adalah aplikasi *chatbot* berbasis kecerdasan buatan (AI) bergaya *mobile-first* yang dirancang secara khusus untuk menjadi asisten ahli di bidang Web3, Blockchain, Trading, dan Cryptocurrency. Aplikasi ini memanfaatkan model bahasa mutakhir **Google Gemini 2.0 Flash** dengan antarmuka bertema *dark mode* dan *neon glow* khas industri kripto.
 
+<img src="Screenshoot_App.jpg" alt="Screenshot 1" height="450">
 ---
 
 ## 🎓 Tentang Proyek (Maju Bareng AI)
